@@ -2,22 +2,22 @@ pipeline {
     agent any // available agent
 
     stages {
-        stage("Checkout the code") {
+        stage('Checkout the code') {
             //checkout the repository
             steps {
                 git branch: 'main', url: 'https://github.com/Dimitrova14/SeleniumWebDriverProject_WithJenkinsPipeline'
             }
         }
-        stage("Setup .NET environment") {
+        stage('Setup .NET environment') {
             //instal .NET environment
         }
-        stage("Restore dependencies") {
+        stage('Restore dependencies') {
             //install dependencies
         }
-        stage("Build") {
+        stage('Build') {
             //build
         }
-        stage("Run Tests") {
+        stage('Run Tests') {
             //run tests
         }
     }
