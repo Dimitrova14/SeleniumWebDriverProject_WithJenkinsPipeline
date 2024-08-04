@@ -8,16 +8,16 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Dimitrova14/SeleniumWebDriverProject_WithJenkinsPipeline'
             }
         }
-        stage("") {
+        stage("Setup .NET environment") {
             //instal .NET environment
         }
-        stage("") {
+        stage("Restore dependencies") {
             //install dependencies
         }
-        stage("") {
+        stage("Build") {
             //build
         }
-        stage("") {
+        stage("Run Tests") {
             //run tests
         }
     }
